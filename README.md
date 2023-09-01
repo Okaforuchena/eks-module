@@ -6,7 +6,8 @@
 
 module "uo-module" {
 
-  source         = "github.com/okaforuchena/eks-module"
+  source         = "app.terraform.io/uocloud/eks-module/aws"
+  version        = "1.1.0"
   region         = "Enter your Providers region here"
   vpc_cidr       = "10.0.0.0/16"
   dns_hostnames  = true
